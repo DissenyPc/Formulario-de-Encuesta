@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="head">
+            <h1 id="title">Formulario de encuesta</h1>
+            <p id="description">Gracias por tomarte el tiempo para ayudarnos a mejorar la plataforma.</p>
+        </div>
+        <form id="survey-form">
+            <label id="name-label" for="name">Nombre <input id="name" name="name" type="text" required Placeholder="Introduzca su nombre"/></label>
+            <label id="email-label" for="email">Email <input id="email" name="email" type="email" required placeholder="Introduzca su Email"/></label>
+            <label id="number-label" for="number">Edad (opcional) <input id="number" name="age" type="number" min="18" max="125" placeholder="Edad"/></label>
+            <select id="dropdown" name="dropdown">
+                <option class="option" value="">(Seleccione el rol actual)</option>
+                <option class="option" value="1">Studiante</option>
+                <option class="option" value="2">Trabajador a tiempo completo</option>
+                <option class="option" value="3">Estudiante a tiempo completo</option>
+                <option class="option" value="4">Prefiero no decirlo</option>
+                <option class="option" value="4">Otros</option>
+            </select>
+            <p class="dentro"> ¿Recomendarías Nuestra web a un amigo?</p>
+            <fieldset id="fil-recomende">
+                <label for="definitely"><input id="definitely" type="radio" name="recommende" value="radio" class="inline" /> definitivamente</label>
+                <label for="Maybe"><input id="Maybe" type="radio" name="recommende" value="radio" class="inline" /> Tal vez</label>
+                <label for="Not sure"><input id="Not sure" type="radio" name="recommende" value="radio" class="inline" /> No estoy seguro</label>
+            </fieldset>
+            <p class="dentro"> ¿Qué le gustaría que se mejorara? (Marque todas las opciones que correspondan)</p>
+            <label> <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"> El diseño de la web</label>
+            <label> <input name="prefer" value="back-end projects" type="checkbox" class="input-checkbox"> La atencion al cliente</label>
+            <label> <input name="prefer" value="data Visualization" type="checkbox" class="input-checkbox"> El Precio de los productos</label>
+            <label> <input name="prefer" value="challenges" type="checkbox" class="input-checkbox"> La variedad de los productos</label>
+            <label> <input name="prefer" value="open Source Community" type="checkbox" class="input-checkbox"> Las condiciones de devolucion</label>
+            <label> <input name="prefer" value="gitter help rooms" type="checkbox" class="input-checkbox"> Los tiempos de entrega</label>
+            <label> <input name="prefer" value="videos" type="checkbox" class="input-checkbox"> Videos</label>
+            <label> <input name="prefer" value="city Meetups" type="checkbox" class="input-checkbox"> Los precios de transporte</label>
+            <label> <input name="prefer" value="wiki" type="checkbox" class="input-checkbox"> El apartado de preguntas frecuentes</label>
+            <label> <input name="prefer" value="forum" type="checkbox" class="input-checkbox"> El foro</label>
+            <label> <input name="prefer" value="additional Courses" type="checkbox" class="input-checkbox"> Añadir un chat</label>
+            <p class="dentro">¿Algún comentario o sugerencia?</p>
+            <label  for="comments">
+                <textarea id="comments" name="comments" rows="5" cols="80" placeholder="Introduzca aquí su comentario..."></textarea>
+            </label>
+            <input type="submit" value="Enviar" id="submit"/>
+        </form>
+    </body>
+</html>
